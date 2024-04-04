@@ -11,13 +11,13 @@ const introdata = {
         second: "I code cool websites",
         third: "I develop mobile apps",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "It is a long established fact that a reader will be distracted by the readerble content of a page when looking at it's layout",
+    your_img_url: "https://scontent-mad2-1.xx.fbcdn.net/v/t31.18172-8/19452861_1484986614855803_1651673064427605556_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF85AwQ_IfLApVt4tIaEokhPnoOeRBZ9VI-eg55EFn1UhdT3jsrcs6vV7gn9x3Lh5vp05XWqM6CuWg4JacCHn2O&_nc_ohc=Uy1aXyVNrbAAb5Z5wtY&_nc_ht=scontent-mad2-1.xx&oh=00_AfALi6GztVCvutrINhAYGGfR3gUrS36w4kCzgaeSD-bt7w&oe=6635ED7C",
 };
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "I am currently studying Computer Science at the University of the People and a trainee at Mest Africa as a full stack developer",
 };
 const worktimeline = [{
         jobtitle: "Designer of week",
@@ -78,14 +78,14 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://cine-mate-eta.vercel.app/",
+        description: "created a movie website.",
+        link: "https://cine-mate-3dlx6sdsg-mrkabbys-projects.vercel.app/",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        description: "Tried my hands on a recipe app.",
+        link: "https://recipe-app-one-smoky.vercel.app/",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
@@ -141,21 +141,21 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "antwikenneth14@gmail.com",
+    YOUR_FONE: "(233)05013-76212",
+    description: "Let's Get Interactive. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_dhzyv8u",
+    YOUR_TEMPLATE_ID: "template_3rhqozj",
+    YOUR_USER_ID: "eMRmjSvOEs6pSEODD",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/mrkabby",
+    facebook: "https://www.facebook.com/kenneth.antwi/",
+    linkedin: "https://www.linkedin.com/in/kenneth-antwi-b0096616a",
+    twitter: "https://twitter.com/kabbyfbaby",
 };
 export {
     meta,

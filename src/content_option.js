@@ -20,41 +20,57 @@ const dataabout = {
     aboutme: "I am currently studying Computer Science at the University of the People and a trainee at Mest Africa as a full stack developer",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Sociologist",
+        where: "Ghana Irrigation Development Authority.Accra, Ministries",
+        date: "2017-2018",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Paxex Admin",
+        where: "CoFred Capital",
+        date: "2018-2018",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Social Media Manager",
+        where: "Freelance",
+        date: "2018-present",
+    },
+    {
+        jobtitle: "CEO",
+        where: "Forty7 Digital Agency",
+        date: "2018-present",
+    },
+    {
+        jobtitle: "Sales and Marketing Manager",
+        where: "Premium Star Quality Group",
+        date: "2021-present",
+    },
+    {
+        jobtitle: "Sales and Marketing Manager",
+        where: "BoatMech",
+        date: "2023-present",
     },
 ];
 
+
 const skills = [{
         name: "Python",
-        value: 90,
-    },
-    {
-        name: "java",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
         value: 60,
     },
     {
+        name: "java",
+        value: 70,
+    },
+    {
+        name: "Javascript",
+        value: 75,
+    },
+    {
+        name: "React",
+        value: 80,
+    },
+    {
         name: "SQL",
-        value: 85,
+        value: 60,
     },
     { 
         name: "PHP",
@@ -64,16 +80,16 @@ const skills = [{
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "IT Consultation",
+        description: "providing expert advice and guidance to businesses or individuals regarding their information technology (IT) needs and challenges..",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Mobile Apps Developer",
+        description: " creating applications (apps) for mobile devices such as smartphones and tablets..",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Developer",
+        description: "creating dynamic applications that run on web browsers, accessible through the internet.",
     },
 ];
 
@@ -88,56 +104,16 @@ const dataportfolio = [{
         link: "https://recipe-app-one-smoky.vercel.app/",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdybyUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D",
+        description: "Created an ecommerce site.",
+        link: "https://660fade53aa29764451e1302--thriving-buttercream-0f4a05.netlify.app/",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://images.unsplash.com/photo-1554796104-5c39d0551b52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5nb3xlbnwwfHwwfHx8MA%3D%3D",
+        description: "Created an NGO site.",
         link: "#",
     },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    
 ];
 
 const contactConfig = {

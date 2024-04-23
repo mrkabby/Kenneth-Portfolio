@@ -49,6 +49,11 @@ const worktimeline = [{
         where: "BoatMech",
         date: "2023-present",
     },
+    {
+        jobtitle: "App Developer (Padi-user-app)",
+        where: "Remote",
+        date: "2024-present",
+    },
 ];
 
 

@@ -51,7 +51,7 @@ const worktimeline = [{
     },
     {
         jobtitle: "App Developer (Padi-user-app)",
-        where: "Remote",
+        where: "Corextreme Technologies",
         date: "2024-present",
     },
 ];

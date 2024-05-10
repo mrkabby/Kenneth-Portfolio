@@ -1,7 +1,7 @@
 const logotext = "KEN";
 const meta = {
     title: "Kenneth Boateng Antwi",
-    description: "I’m Kenneth BOateng Antwi Full stack devloper,currently learning at Mest Africa",
+    description: "I’m Kenneth Boateng Antwi MERN STACK",
 };
 
 const introdata = {
@@ -12,7 +12,7 @@ const introdata = {
         third: "I develop mobile apps",
     },
     description: "It is a long established fact that a reader will be distracted by the readerble content of a page when looking at it's layout",
-    your_img_url: "https://scontent-mad2-1.xx.fbcdn.net/v/t31.18172-8/19452861_1484986614855803_1651673064427605556_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF85AwQ_IfLApVt4tIaEokhPnoOeRBZ9VI-eg55EFn1UhdT3jsrcs6vV7gn9x3Lh5vp05XWqM6CuWg4JacCHn2O&_nc_ohc=Uy1aXyVNrbAAb5Z5wtY&_nc_ht=scontent-mad2-1.xx&oh=00_AfALi6GztVCvutrINhAYGGfR3gUrS36w4kCzgaeSD-bt7w&oe=6635ED7C",
+    your_img_url: "https://scontent.facc6-1.fna.fbcdn.net/v/t31.18172-8/19452861_1484986614855803_1651673064427605556_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF85AwQ_IfLApVt4tIaEokhPnoOeRBZ9VI-eg55EFn1UhdT3jsrcs6vV7gn9x3Lh5vp05XWqM6CuWg4JacCHn2O&_nc_ohc=Jm_IbMQEEj0Q7kNvgGxpBxV&_nc_ht=scontent.facc6-1.fna&oh=00_AYAQa8p3dK5Kdf_TzNLOeAOG3JV3t2eIZbI6Cru0qbjXNA&oe=6665D3FC",
 };
 
 const dataabout = {
@@ -114,9 +114,9 @@ const dataportfolio = [{
         link: "https://660fade53aa29764451e1302--thriving-buttercream-0f4a05.netlify.app/",
     },
     {
-        img: "https://images.unsplash.com/photo-1554796104-5c39d0551b52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5nb3xlbnwwfHwwfHx8MA%3D%3D",
-        description: "Created an NGO site.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D",
+        description: "Created another ecommerce site.",
+        link: "https://slay-shoper-app.vercel.app/",
     },
     
 ];

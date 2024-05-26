@@ -118,6 +118,11 @@ const dataportfolio = [{
         description: "Created another ecommerce site.",
         link: "https://slay-shoper-app.vercel.app/",
     },
+    {
+        img: "https://unsplash.com/photos/yellow-and-white-duck-plush-toy-on-green-grass-during-daytime-DypO_XgAE4Y",
+        description: "Created a PokeBook App.",
+        link: "https://pokebook-coral.vercel.app/",
+    },
     
 ];
 

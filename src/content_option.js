@@ -12,7 +12,7 @@ const introdata = {
         third: "I develop mobile apps",
     },
     description: "It is a long established fact that a reader will be distracted by the readerble content of a page when looking at it's layout",
-    your_img_url: "https://scontent.facc6-1.fna.fbcdn.net/v/t31.18172-8/19452861_1484986614855803_1651673064427605556_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF85AwQ_IfLApVt4tIaEokhPnoOeRBZ9VI-eg55EFn1UhdT3jsrcs6vV7gn9x3Lh5vp05XWqM6CuWg4JacCHn2O&_nc_ohc=Jm_IbMQEEj0Q7kNvgGxpBxV&_nc_ht=scontent.facc6-1.fna&oh=00_AYAQa8p3dK5Kdf_TzNLOeAOG3JV3t2eIZbI6Cru0qbjXNA&oe=6665D3FC",
+    your_img_url: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 };
 
 const dataabout = {
@@ -101,7 +101,7 @@ const services = [{
 const dataportfolio = [{
         img: "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW92aWUlMjB0aGVhdGVyfGVufDB8fDB8fHww",
         description: "created a movie website.",
-        link: "https://cine-mate-3dlx6sdsg-mrkabbys-projects.vercel.app/",
+        link: "https://cine-mate-eta.vercel.app/",
     },
     {
         img: "https://plus.unsplash.com/premium_photo-1673830185086-8d54f4c0f3a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D",
@@ -119,7 +119,7 @@ const dataportfolio = [{
         link: "https://slay-shoper-app.vercel.app/",
     },
     {
-        img: "https://unsplash.com/photos/yellow-and-white-duck-plush-toy-on-green-grass-during-daytime-DypO_XgAE4Y",
+        img: "https://images.unsplash.com/photo-1730957296682-78ec10a09ce2?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Created a PokeBook App.",
         link: "https://pokebook-coral.vercel.app/",
     },
@@ -130,11 +130,10 @@ const contactConfig = {
     YOUR_EMAIL: "antwikenneth14@gmail.com",
     YOUR_FONE: "(233)05013-76212",
     description: "Let's Get Interactive. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_dhzyv8u",
-    YOUR_TEMPLATE_ID: "template_3rhqozj",
-    YOUR_USER_ID: "eMRmjSvOEs6pSEODD",
+   
+    YOUR_SERVICE_ID: process.env.REACT_APP_SERVICE_ID,
+    YOUR_TEMPLATE_ID: process.env.REACT_APP_TEMPLATE_ID,
+    YOUR_USER_ID: process.env.REACT_APP_USER_ID,
 };
 
 const socialprofils = {

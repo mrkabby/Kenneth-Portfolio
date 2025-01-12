@@ -111,7 +111,7 @@ const dataportfolio = [{
     {
         img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdybyUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D",
         description: "Created an  Agric ecommerce site.",
-        link: "https://https://farmyard-app.vercel.app/",
+        link: "https://farmyard-app.vercel.app/",
     },
     {
         img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D",

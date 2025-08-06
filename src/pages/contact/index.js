@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
@@ -19,13 +19,38 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata({ ...formData, loading: true });
+
+    // Validate environment variables
+    if (!contactConfig.YOUR_SERVICE_ID || !contactConfig.YOUR_TEMPLATE_ID || !contactConfig.YOUR_USER_ID) {
+      setFormdata({
+        ...formData,
+        loading: false,
+        alertmessage: "EmailJS configuration is missing. Please check environment variables.",
+        variant: "danger",
+        show: true,
+      });
+      return;
+    }
+
+    // Create a formatted timestamp
+    const currentTime = new Date().toLocaleString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
 
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
+      name: formData.name,           // Maps to {{name}} in template
+      email: formData.email,         // User's email address
+      message: formData.message,     // Maps to {{message}} in template
+      time: currentTime,             // Maps to {{time}} in template
       to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
+      from_name: formData.name,      // Sender's name
+      user_email: formData.email,    // Additional email field if needed
     };
 
     emailjs
@@ -37,24 +62,39 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setFormdata({
+            ...formData,
             loading: false,
-            alertmessage: "SUCCESS! ,Thank you for your messege",
+            alertmessage: "SUCCESS! Thank you for your message. I will get back to you soon!",
             variant: "success",
             show: true,
+            name: "",
+            email: "",
+            message: ""
           });
         },
         (error) => {
-          console.log(error.text);
+          const errorMessage = error.text || error.message || error.toString() || "Unknown error occurred";
           setFormdata({
-            alertmessage: `Failed to send!,${error.text}`,
+            ...formData,
+            loading: false,
+            alertmessage: `Failed to send message: ${errorMessage}`,
             variant: "danger",
             show: true,
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
+          document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
         }
-      );
+      )
+      .catch((error) => {
+        const errorMessage = error.text || error.message || error.toString() || "Network error occurred";
+        setFormdata({
+          ...formData,
+          loading: false,
+          alertmessage: `Failed to send message: ${errorMessage}`,
+          variant: "danger",
+          show: true,
+        });
+      });
   };
 
   const handleChange = (e) => {
@@ -81,12 +121,11 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() => setFormdata({ ...formData, show: false })}
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>

@@ -4,7 +4,60 @@
 
 .table td,
 .table th {
-    color: var(--text-color);
+    color: var(--text-color) !important;
+    border-color: var(--secondary-color) !important;
+    background-color: transparent !important;
+}
+
+.table {
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: transparent !important;
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+}
+
+.table td {
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+}
+
+/* Specific overrides for Bootstrap table in both themes */
+[data-theme="light"] .table,
+[data-theme="light"] .table th,
+[data-theme="light"] .table td,
+[data-theme="light"] .table tbody tr th,
+[data-theme="light"] .table tbody tr td {
+    color: #000000 !important;
+    background-color: transparent !important;
+    border-color: #000000 !important;
+}
+
+/* Force black text in light mode with maximum specificity */
+html[data-theme="light"] .container .table th,
+html[data-theme="light"] .container .table td,
+html[data-theme="light"] .About-header .table th,
+html[data-theme="light"] .About-header .table td {
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .table,
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td,
+:root .table,
+:root .table th,
+:root .table td {
+    color: #fff !important;
+    background-color: transparent !important;
 }
 
 .t_border {

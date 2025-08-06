@@ -1,24 +1,25 @@
 const logotext = "KEN";
 const meta = {
     title: "Kenneth Boateng Antwi",
-    description: "I’m Kenneth Boateng Antwi MERN STACK",
+    description: "I'm Kenneth Boateng Antwi MERN STACK",
 };
 
 const introdata = {
-    title: "I’m Kenneth Boateng Antwi",
+    title: "I'm Kenneth Boateng Antwi",
     animated: {
         first: "I love coding",
         second: "I code cool websites",
         third: "I develop mobile apps",
     },
-    description: "It is a long established fact that a reader will be distracted by the readerble content of a page when looking at it's layout",
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
     your_img_url: "kenphoto.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "a bit about myself",
     aboutme: "I am currently studying Computer Science at the University of the People and a trainee at Mest Africa as a full stack developer",
 };
+
 const worktimeline = [{
         jobtitle: "Sociologist",
         where: "Ghana Irrigation Development Authority.Accra, Ministries",
@@ -56,13 +57,12 @@ const worktimeline = [{
     },
 ];
 
-
 const skills = [{
         name: "Python",
         value: 60,
     },
     {
-        name: "java",
+        name: "Java",
         value: 70,
     },
     {
@@ -80,17 +80,16 @@ const skills = [{
     { 
         name: "PHP",
         value: 60,
-
     },
 ];
 
 const services = [{
         title: "IT Consultation",
-        description: "providing expert advice and guidance to businesses or individuals regarding their information technology (IT) needs and challenges..",
+        description: "providing expert advice and guidance to businesses or individuals regarding their information technology (IT) needs and challenges.",
     },
     {
         title: "Mobile Apps Developer",
-        description: " creating applications (apps) for mobile devices such as smartphones and tablets..",
+        description: "creating applications (apps) for mobile devices such as smartphones and tablets.",
     },
     {
         title: "Web Developer",
@@ -100,7 +99,7 @@ const services = [{
 
 const dataportfolio = [{
         img: "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW92aWUlMjB0aGVhdGVyfGVufDB8fDB8fHww",
-        description: "created a movie website.",
+        description: "Created a movie website.",
         link: "https://cine-mate-eta.vercel.app/",
     },
     {
@@ -110,7 +109,7 @@ const dataportfolio = [{
     },
     {
         img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdybyUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D",
-        description: "Created an  Agric ecommerce site.",
+        description: "Created an Agric ecommerce site.",
         link: "https://farmyard-app.vercel.app/",
     },
     {
@@ -140,7 +139,7 @@ const dataportfolio = [{
     },
     {
         img: "https://rackets-for-africa-app.vercel.app/static/media/Logo.ce9f917a6a25c48120f1.png",
-        description: "Created an NGO  App.",
+        description: "Created an NGO App.",
         link: "https://rackets-for-africa-app.vercel.app/",
     },
     {
@@ -168,7 +167,6 @@ const dataportfolio = [{
         description: "Created GloryFoods site Using GoogleSheet as CMS.",
         link: "https://glory-foods.vercel.app/",
     },
-    
 ];
 
 const contactConfig = {
@@ -187,6 +185,7 @@ const socialprofils = {
     linkedin: "https://www.linkedin.com/in/kenneth-antwi-b0096616a",
     twitter: "https://twitter.com/kabbyfbaby",
 };
+
 export {
     meta,
     dataabout,

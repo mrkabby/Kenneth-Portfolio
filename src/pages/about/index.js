@@ -9,6 +9,13 @@ import {
   skills,
   services,
 } from "../../content_option";
+import {
+  FiMonitor,
+  FiSmartphone,
+  FiCpu,
+} from "react-icons/fi";
+
+const serviceIcons = [FiCpu, FiSmartphone, FiMonitor];
 
 export const About = () => {
   return (
@@ -19,76 +26,88 @@ export const About = () => {
           <title> About | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+
+        {/* Page heading */}
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h1 className="display-4 mb-4 animate-fadeInUp">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+
+        {/* About me */}
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">{dataabout.title}</h3>
+            <h3 className="color_sec py-4 animate-fadeInUp">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              <p className="about_text animate-fadeInUp animate-delay-2">{dataabout.aboutme}</p>
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timeline</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
+
+        {/* Work Timeline — Visual */}
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4 animate-fadeInUp">Work Timeline</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
+            <div className="timeline">
+              {worktimeline.map((data, i) => (
+                <div className="timeline_item animate-fadeInUp" style={{ animationDelay: `${i * 0.08}s` }} key={i}>
+                  <div className="timeline_dot"></div>
+                  <div className="timeline_content">
+                    <h5 className="timeline_title">{data.jobtitle}</h5>
+                    <span className="timeline_where">{data.where}</span>
+                    <span className="timeline_date">{data.date}</span>
                   </div>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </Col>
         </Row>
+
+        {/* Skills */}
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4 animate-fadeInUp">Skills</h3>
+          </Col>
+          <Col lg="7">
+            {skills.map((data, i) => (
+              <div key={i} className="animate-fadeInUp" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="skill_header">
+                  <span className="progress-title">{data.name}</span>
+                  <span className="skill_pct">{data.value}%</span>
+                </div>
+                <div className="progress">
+                  <div
+                    className="progress-bar"
+                    style={{ width: `${data.value}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </Col>
+        </Row>
+
+        {/* Services */}
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4 animate-fadeInUp">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
+              const Icon = serviceIcons[i] || FiMonitor;
               return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                <div className="service_card animate-fadeInUp" style={{ animationDelay: `${i * 0.12}s` }} key={i}>
+                  <div className="service_icon">
+                    <Icon size={22} />
+                  </div>
+                  <div className="service_body">
+                    <h5 className="service__title">{data.title}</h5>
+                    <p className="service_desc">{data.description}</p>
+                  </div>
                 </div>
               );
             })}

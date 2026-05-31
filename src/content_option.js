@@ -7,53 +7,53 @@ const meta = {
 const introdata = {
     title: "I'm Kenneth Boateng Antwi",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I build full-stack web apps",
+        second: "I craft mobile experiences",
+        third: "I turn ideas into products",
     },
-    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+    description: "Passionate full-stack developer building impactful digital experiences — from sleek web apps to enterprise mobile solutions. CEO of Forty7 Digital Agency, based in Ghana, serving clients globally.",
     your_img_url: "kenphoto.jpg",
 };
 
 const dataabout = {
     title: "a bit about myself",
-    aboutme: "I am a full stack developer BA Sociology, Bsc Computer Science and Msc Cybersecurity",
+    aboutme: "I'm Kenneth — a full-stack developer, digital entrepreneur, and lifelong learner with a BA in Sociology, BSc in Computer Science, and MSc in Cybersecurity. I founded Forty7 Digital Agency and have built 19+ web and mobile products for businesses across Africa and beyond. I bring both technical depth and business perspective to every project I take on.",
 };
 
 const worktimeline = [{
         jobtitle: "Sociologist",
-        where: "Ghana Irrigation Development Authority.Accra, Ministries",
-        date: "2017-2018",
+        where: "Ghana Irrigation Development Authority — Accra",
+        date: "2017–2018",
     },
     {
         jobtitle: "Paxex Admin",
         where: "CoFred Capital",
-        date: "2018-2018",
+        date: "2018",
     },
     {
         jobtitle: "Social Media Manager",
         where: "Freelance",
-        date: "2018-present",
+        date: "2018–Present",
     },
     {
-        jobtitle: "CEO",
+        jobtitle: "CEO & Founder",
         where: "Forty7 Digital Agency",
-        date: "2018-present",
+        date: "2018–Present",
     },
     {
-        jobtitle: "Sales and Marketing Manager",
+        jobtitle: "Sales & Marketing Manager",
         where: "Premium Star Quality Group",
-        date: "2021-present",
+        date: "2021–Present",
     },
     {
-        jobtitle: "Sales and Marketing Manager",
+        jobtitle: "Sales & Marketing Manager",
         where: "BoatMech",
-        date: "2023-present",
+        date: "2023–Present",
     },
     {
-        jobtitle: "App Developer (Padi-user-app)",
+        jobtitle: "App Developer — Padi User App",
         where: "Corextreme Technologies",
-        date: "2024-present",
+        date: "2024–Present",
     },
 ];
 
@@ -179,9 +179,9 @@ const dataportfolio = [{
 
     },
     {
-img:"https://images.unsplash.com/photo-1606001535190-db37555db345?q=80&w=1230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-description: "All Love - Safe community platform for personal storytelling and authentic connections. Features privacy-focused design and supportive community moderation.",
-link: "https://www.alllove.space/",
+        img: "https://images.unsplash.com/photo-1606001535190-db37555db345?q=80&w=1230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "All Love - A platform dedicated to exploring love, relationships, and emotional wellbeing. Features in-depth articles, personal reflections, and anonymous letters for authentic human connection.",
+        link: "https://www.alllove.space/",
     },
     {
         img: "https://www.successbooks.academy/_next/image?url=%2Flogo.jpg&w=1200&q=75",
@@ -192,14 +192,19 @@ link: "https://www.alllove.space/",
         img: "https://aspire-leaders-ghana-alumni.vercel.app/Union.svg",
         description: "Aspire Leaders Ghana Alumni - Networking platform connecting and empowering graduates of the Aspire Leaders program with job opportunities and mentorship.",
         link: "https://aspire-leaders-ghana-alumni.vercel.app/",
+    },
+    {
+        img: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop",
+        description: "SafeSpace - Anonymous reflection platform where users explore deep questions about life and emotions. Fully anonymous with browser fingerprinting to let users manage their own content privately.",
+        link: "https://safespace-lake.vercel.app/",
     }
 ];
 
 
 const contactConfig = {
     YOUR_EMAIL: "antwikenneth14@gmail.com",
-    YOUR_FONE: "(233)05013-76212",
-    description: "Let's Get Interactive. ",
+    YOUR_FONE: "+233 050 137 6212",
+    description: "Have a project in mind or want to collaborate? I'd love to hear from you.",
    
     YOUR_SERVICE_ID: process.env.REACT_APP_SERVICE_ID,
     YOUR_TEMPLATE_ID: process.env.REACT_APP_TEMPLATE_ID,

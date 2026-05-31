@@ -27,11 +27,12 @@
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
-    font-family: Marcellus;
+    font-family: 'Space Grotesk', Marcellus, serif;
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     z-index: 1000;
 }
 
@@ -195,13 +196,34 @@
 
 .menu_footer {
     bottom: 0;
-    font-family: Marcellus;
-    font-size: 14px;
+    font-family: 'Inter', Marcellus, sans-serif;
+    font-size: 13px;
     background: var(--primary-color);
 }
 
-.menu_footer a {
+/* Social icon links in menu footer */
+.menu_social_icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
     color: var(--text-color-2);
-    margin-right: 10px;
+    font-size: 1rem;
     text-decoration: none;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 }
+
+.menu_social_icons a:hover {
+    border-color: var(--text-color-2);
+    transform: translateY(-2px);
+    color: var(--text-color-2);
+}
+
+.copyright {
+    color: var(--muted-color);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+}

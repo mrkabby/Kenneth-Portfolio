@@ -47,7 +47,7 @@ Your portfolio received a comprehensive SEO overhaul with focus on meta tags, co
 ```
 Before: "I'm Kenneth Boateng Antwi MERN STACK"
 After:  "Expert full stack developer with BSc Computer 
-         Science and MSc Cybersecurity. Specializing in 
+         Science and Cybersecurity. Specializing in 
          MERN stack, React, Node.js, and mobile app 
          development. Building innovative digital solutions."
 ```
@@ -120,7 +120,7 @@ useSEO({
   title: "Page Title",
   description: "Page description",
   keywords: "keyword1, keyword2",
-  canonical: "https://kenneth-portfolio.com/page"
+  canonical: "https://www.kennethboatengantwi.me/page"
 });
 ```
 
@@ -129,7 +129,7 @@ useSEO({
 ### 4. Structured Data Markup
 **JSON-LD Person Schema Added:**
 - Name, profession, image
-- Education levels (BSc, MSc)
+- Education levels (BSc)
 - Social profiles links
 - Skills and expertise
 - Works for organization

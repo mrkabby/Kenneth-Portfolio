@@ -1,23 +1,24 @@
 # Kenneth Boateng Antwi Portfolio - Robots.txt
-# Allow search engines to crawl and index this portfolio
+# Optimized for Googlebot and major search engine crawlers
 
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /*.env
 Disallow: /node_modules
-Crawl-delay: 1
-Request-rate: 10/1s
 
-# Specific rules for Google
+# Specific rules for Googlebot
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
-# Specific rules for Bing
+# Google Image search crawler
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing crawler
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-# Sitemaps
-Sitemap: https://kenneth-portfolio.com/sitemap.xml
+# Canonical Sitemap location
+Sitemap: https://www.kennethboatengantwi.me/sitemap.xml
+Host: https://www.kennethboatengantwi.me

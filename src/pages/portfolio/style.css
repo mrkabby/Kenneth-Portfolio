@@ -64,16 +64,26 @@
     padding: 24px;
     opacity: 0;
     transition: opacity 0.35s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .po_item:hover .po_overlay {
     opacity: 1;
 }
 
+.po_title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+
 .po_desc {
-    font-size: 0.82rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 14px;
     display: -webkit-box;
     -webkit-line-clamp: 4;

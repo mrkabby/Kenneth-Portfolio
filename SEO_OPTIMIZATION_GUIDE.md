@@ -55,7 +55,7 @@ Add to your page components:
       title: "Home - Kenneth Boateng Antwi | Full Stack Developer",
       description: "Welcome to my portfolio. Expert MERN developer with 5+ years experience.",
       keywords: "full stack developer, MERN, React developer, web development",
-      canonical: "https://kenneth-portfolio.com/"
+      canonical: "https://www.kennethboatengantwi.me/"
     });
     // ... rest of component
   }

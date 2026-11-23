@@ -15,13 +15,13 @@ import { Helmet } from "react-helmet-async";
  */
 export const useSEO = (config = {}) => {
   const {
-    title = "Kenneth Boateng Antwi - Full Stack Developer",
-    description = "Expert full stack developer specializing in MERN stack and mobile applications.",
-    keywords = "full stack developer, MERN, React, Node.js, web development",
-    canonical = "https://kenneth-portfolio.com",
+    title = "Kenneth Boateng Antwi - Full-Stack Engineer | Web, Mobile & AI Solutions",
+    description = "Full-stack engineer with 3 years of experience developing web applications, AI-enabled products, and digital solutions. BSc in Computer Science.",
+    keywords = "full stack engineer, React, Next.js, Django, Node.js, React Native, AI Health Buddy, RAG, cybersecurity, web developer",
+    canonical = "https://www.kennethboatengantwi.me",
     ogTitle = title,
     ogDescription = description,
-    ogImage = "https://kenneth-portfolio.com/kenphoto.jpg",
+    ogImage = "https://www.kennethboatengantwi.me/kenphoto.jpg",
     ogType = "website",
   } = config;
 

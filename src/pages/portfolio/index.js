@@ -24,9 +24,13 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             // Extract a short project name from the description (text before " - " or first 4 words)
             const firstSentence = data.description || "";
-            const projectName = firstSentence.includes(" - ")
+            const hasHyphen = firstSentence.includes(" - ");
+            const projectName = hasHyphen
               ? firstSentence.split(" - ")[0]
               : firstSentence.split(" ").slice(0, 3).join(" ");
+            const projectDesc = hasHyphen
+              ? firstSentence.slice(projectName.length + 3)
+              : firstSentence;
 
             return (
               <div
@@ -40,7 +44,8 @@ export const Portfolio = () => {
                   loading="lazy"
                 />
                 <div className="po_overlay">
-                  <p className="po_desc">{data.description}</p>
+                  <h4 className="po_title">{projectName}</h4>
+                  <p className="po_desc">{projectDesc}</p>
                   {data.link && (
                     <a
                       href={data.link}

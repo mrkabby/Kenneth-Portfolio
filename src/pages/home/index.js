@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 import { FiGithub, FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
 
 const stats = [
-  { number: 19, suffix: "+", label: "Projects Built" },
-  { number: 7, suffix: "+", label: "Years Experience" },
-  { number: 3, suffix: "", label: "Degrees Earned" },
-  { number: 10, suffix: "+", label: "Happy Clients" },
+  { number: 20, suffix: "+", label: "Projects Built" },
+  { number: 5, suffix: "+", label: "Years Tech Experience" },
+  { number: 3, suffix: "", label: "Certifications" },
+  { number: 10, suffix: "+", label: "Accounts & Clients" },
 ];
 
 function useCountUp(target, duration = 1500, start = false) {
@@ -74,7 +74,7 @@ export const Home = () => {
             <div className="align-self-center">
               <div className="intro mx-auto">
                 <p className="hero_eyebrow animate-fadeInUp animate-delay-1">
-                  Full-Stack Developer &amp; Digital Entrepreneur
+                  Full-Stack Engineer &amp; AI Solutions Developer
                 </p>
                 <h2 className="mb-1x animate-fadeInUp animate-delay-2">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x animate-fadeInUp animate-delay-3">

@@ -109,19 +109,19 @@
 .timeline_content {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 .timeline_title {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
     line-height: 1.4;
 }
 
 .timeline_where {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--muted-color);
 }
 
@@ -130,12 +130,247 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     color: var(--muted-color);
-    opacity: 0.7;
+    opacity: 0.8;
     margin-top: 2px;
 }
 
+.timeline_summary {
+    font-size: 0.87rem;
+    line-height: 1.65;
+    color: var(--muted-color);
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
 /* ====================================================
-   SKILLS BARS
+   EDUCATION CARDS
+   ==================================================== */
+
+.edu_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.edu_card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    transition: all 0.25s ease;
+}
+
+.edu_card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.edu_icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+}
+
+.edu_body {
+    flex: 1;
+}
+
+.edu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.edu_degree {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.edu_badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 4px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--muted-color);
+}
+
+.edu_badge.incoming {
+    background: rgba(46, 204, 113, 0.12);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.35);
+}
+
+.edu_school {
+    font-size: 0.86rem;
+    color: var(--muted-color);
+    margin: 0 0 4px 0;
+}
+
+.edu_date {
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--muted-color);
+    opacity: 0.75;
+}
+
+.edu_details {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--muted-color);
+    margin: 8px 0 0 0;
+}
+
+/* ====================================================
+   CERTIFICATIONS GRID
+   ==================================================== */
+
+.cert_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.cert_card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    transition: all 0.25s ease;
+}
+
+.cert_card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.cert_card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cert_icon_wrap {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.cert_title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.cert_issuer {
+    font-size: 0.82rem;
+    color: var(--muted-color);
+}
+
+.cert_date {
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--muted-color);
+    opacity: 0.8;
+}
+
+/* ====================================================
+   LEADERSHIP & PROFESSIONAL DEVELOPMENT
+   ==================================================== */
+
+.leadership_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.leadership_card {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    transition: all 0.25s ease;
+}
+
+.leadership_card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.leadership_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.leadership_title_wrap {
+    flex: 1;
+}
+
+.leadership_title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+}
+
+.leadership_org {
+    font-size: 0.84rem;
+    color: var(--muted-color);
+}
+
+.leadership_date {
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--muted-color);
+    opacity: 0.8;
+}
+
+.leadership_desc {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--muted-color);
+    margin: 0;
+}
+
+/* ====================================================
+   SKILLS BARS & CATEGORIES
    ==================================================== */
 
 .skill_header {
@@ -176,11 +411,50 @@
     overflow: visible;
 }
 
-@-webkit-keyframes animate-positive {
-    0% { width: 0%; }
-}
 @keyframes animate-positive {
     0% { width: 0%; }
+}
+
+.skill_categories {
+    margin-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.skill_category_group {
+    margin-bottom: 18px;
+}
+
+.skill_category_title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.skill_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill_badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.skill_badge:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-1px);
 }
 
 /* ====================================================

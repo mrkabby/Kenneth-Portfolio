@@ -191,24 +191,34 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=60",
-        description: "AI Health Buddy (Aspire x Cayu Global AI Hackathon) - Patient-friendly digital health assistant designed to make medication adherence safer. Features plain-language medication label explanations, drug-food/drug-drug interaction alerts, caregiver sharing, multi-language support, RAG + LLM personalization, and Supabase Row Level Security.",
-        link: "https://github.com/mrkabby",
+        img: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&auto=format&fit=crop&q=60",
+        description: "Bernard Arkoh - Executive leadership and mindset training platform featuring certainty disruption workshops, corporate innovation sessions, and experiential coaching programs.",
+        link: "https://www.bernardarkoh.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop&q=60",
-        description: "HENNGE Global Internship Coding Challenge - Three-stage backend challenge completed using Python and recursive programming under strict constraints. Implemented secure HTTP POST authentication with a custom TOTP generator using HMAC-SHA-512.",
-        link: "https://github.com/mrkabby",
+        img: "https://gailine.com/_next/image?url=%2Fgailine%20logo%202.jpeg&w=1200&q=75",
+        description: "Gailine - International e-commerce platform for import/export goods. Features multi-currency support, inventory management, and logistics tracking.",
+        link: "https://gailine.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=1200&auto=format&fit=crop&q=60",
-        description: "ShoppingApp — E-commerce Web Template - Responsive Next.js e-commerce frontend with cart, filtering, and checkout features, integrating Firebase Authentication and Firestore.",
-        link: "https://github.com/mrkabby",
+        img: "https://images.unsplash.com/photo-1606001535190-db37555db345?q=80&w=1230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "All Love - A platform dedicated to exploring love, relationships, and emotional wellbeing. Features in-depth articles, personal reflections, and anonymous letters for authentic human connection.",
+        link: "https://www.alllove.space/",
     },
     {
-        img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&auto=format&fit=crop&q=60",
-        description: "Coextreme Technologies — E-Commerce Mobile App - Full-stack mobile application developed using React Native, Node.js and MongoDB; delivered a production-ready MVP within two weeks.",
-        link: "https://github.com/mrkabby",
+        img: "https://www.successbooks.academy/_next/image?url=%2Flogo.jpg&w=1200&q=75",
+        description: "Success Books Academy - Comprehensive online learning platform offering sociology courses, academic resources, and professional development tools for students and educators.",
+        link: "https://www.successbooks.academy/",
+    },
+    {
+        img: "https://images.unsplash.com/photo-1526406915894-7bcd65f60845?w=1200&auto=format&fit=crop&q=60",
+        description: "Tappio - Wireless remote control and trackpad web platform that transforms iOS and iPad devices into high-precision trackpads and keyboards for desktop systems.",
+        link: "https://tappio-theta.vercel.app/",
+    },
+    {
+        img: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&auto=format&fit=crop&q=60",
+        description: "Abigail Nkansah Mensah Ministries - Official gospel music ministry platform showcasing worship releases, international ministry outreach, audio streaming, and event management.",
+        link: "https://abigailnkansahmensahministries.vercel.app/",
     },
     {
         img: "https://hospital-app-peach.vercel.app/static/media/3_angels_suit_page-0001-removebg-preview.4001a4f9a65ac3e8c655.png",
@@ -251,16 +261,6 @@ const dataportfolio = [
         link: "https://safespace-lake.vercel.app/",
     },
     {
-        img: "https://images.unsplash.com/photo-1606001535190-db37555db345?q=80&w=1230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "All Love - A platform dedicated to exploring love, relationships, and emotional wellbeing. Features in-depth articles, personal reflections, and anonymous letters for authentic human connection.",
-        link: "https://www.alllove.space/",
-    },
-    {
-        img: "https://gailine.com/_next/image?url=%2Fgailine%20logo%202.jpeg&w=1200&q=75",
-        description: "Gailine - International e-commerce platform for import/export goods. Features multi-currency support, inventory management, and logistics tracking.",
-        link: "https://gailine.com/",
-    },
-    {
         img: "https://images.unsplash.com/photo-1730957296682-78ec10a09ce2?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "PokeBook - Interactive Pokemon directory and database. Features detailed Pokemon information, filtering, and search functionality with real-time API data.",
         link: "https://pokebook-coral.vercel.app/",
@@ -279,11 +279,6 @@ const dataportfolio = [
         img: "https://rackets-for-africa-app.vercel.app/static/media/Logo.ce9f917a6a25c48120f1.png",
         description: "Rackets for Africa - NGO platform promoting sports development and community engagement in Africa through fundraising and program management features.",
         link: "https://rackets-for-africa-app.vercel.app/",
-    },
-    {
-        img: "https://www.successbooks.academy/_next/image?url=%2Flogo.jpg&w=1200&q=75",
-        description: "Success Books Academy - Comprehensive online learning platform offering sociology courses, academic resources, and professional development tools for students and educators.",
-        link: "https://www.successbooks.academy/",
     },
     {
         img: "https://i.imgur.com/IOXblrq.jpg",

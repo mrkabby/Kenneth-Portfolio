@@ -11,6 +11,10 @@ Disallow: /node_modules
 User-agent: Googlebot
 Allow: /
 
+# Google Favicon crawler
+User-agent: Googlebot-Favicon
+Allow: /
+
 # Google Image search crawler
 User-agent: Googlebot-Image
 Allow: /
